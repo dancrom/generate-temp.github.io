@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate</title>
+  <link rel="stylesheet" href="generate.css">
+  <script src="generate.js"></script>
+</head>
+
+<body>
+  <section id="header">
+
+    <ul id="navbar">
+      <li><a class="active" href="#description">Description</a></li>
+      <li><a href="#images">Photos</a></li>
+      <li><a href="#generate-button-display">Generate</a></li>
+    </ul>
+  </section>
+
+  <section id="images">
+    <h1>Add the links to your photos</h1>
+
+    <h4>1. Add them into your listing on ebay</h4>
+    <h4>2. Right click on the image in your ebay listing and select 'Inspect Element'</h4>
+    <h4>3. Select the image</h4>
+    <h4>4. Copy the image link</h4>
+
+    <h5>Amount of images to add: <input type="text" id="amt-images" style="font-size:15px;"></h5>
+    <button id="add-image" onclick="addImage()">Add Images</button>
+
+    <div class="image-link" style="display: none;" id="image-div1">
+      <input type="text" placeholder="Image Link 1" id="image1">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div2">
+      <input type="text" placeholder="Image Link 2" id="image2">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div3">
+      <input type="text" placeholder="Image Link 3" id="image3">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div4">
+      <input type="text" placeholder="Image Link 4" id="image4">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div5">
+      <input type="text" placeholder="Image Link 5" id="image5">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div6">
+      <input type="text" placeholder="Image Link 6" id="image6">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div7">
+      <input type="text" placeholder="Image Link 7" id="image7">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div8">
+      <input type="text" placeholder="Image Link 8" id="image8">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div9">
+      <input type="text" placeholder="Image Link 9" id="image9">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div10">
+      <input type="text" placeholder="Image Link 10" id="image10">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div11">
+      <input type="text" placeholder="Image Link 11" id="image11">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div12">
+      <input type="text" placeholder="Image Link 12" id="image12">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div13">
+      <input type="text" placeholder="Image Link 13" id="image13">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div14">
+      <input type="text" placeholder="Image Link 14" id="image14">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div15">
+      <input type="text" placeholder="Image Link 15" id="image15">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div16">
+      <input type="text" placeholder="Image Link 16" id="image16">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div17">
+      <input type="text" placeholder="Image Link 17" id="image17">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div18">
+      <input type="text" placeholder="Image Link 18" id="image18">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div19">
+      <input type="text" placeholder="Image Link 19" id="image19">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div20">
+      <input type="text" placeholder="Image Link 20" id="image20">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div21">
+      <input type="text" placeholder="Image Link 21" id="image21">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div22">
+      <input type="text" placeholder="Image Link 22" id="image22">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div23">
+      <input type="text" placeholder="Image Link 23" id="image23">
+    </div>
+    <div class="image-link" style="display: none;" id="image-div24">
+      <input type="text" placeholder="Image Link 24" id="image24">
+    </div>
+
+  </section>
+
+  <section id="description">
+    <div id="title">
+      <input type="text" placeholder="Title" id="title-input" style="font-size:15px;">
+    </div>
+    <div id="description-text">
+      <textarea name="description" id="desc-input" cols="74" rows="25" style="font-size:15px;"></textarea>
+    </div>
+    <div>
+      <button >Bold</button>
+    </div>
+  </section>
+
+  <section id="generate-button-display">
+    <button id="generate-button" onclick="generate()">Generate</button>
+  </section>
+
+  <section id="generate" style="display:none;">
+    <h1>Now copy all of this text and paste it into your description on ebay</h1>
+
+    <textarea name="generated" id="generated-text" cols="98" rows="25"></textarea>
+  </section>
+
+</body>
+
+</html>
