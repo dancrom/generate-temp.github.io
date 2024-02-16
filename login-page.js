@@ -8,8 +8,8 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
     if (username === "pbtc" && password === "PbTc150224!") {
-        alert("You have successfully logged in.");
-        location.reload();
+        alert('logged in')
+        window.location.href = 'generate.html'
     } else {
         loginErrorMsg.style.opacity = 1;
     }
