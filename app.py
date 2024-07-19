@@ -53,7 +53,13 @@ def get_templates():
 # Route to serve the form to create a template
 @app.route('/')
 def create_template_form():
-    return render_template('generate.html')
+    username = request.form['username']
+    password = request.form['password']
+
+    if username != 'pbtc' or password != 'PbTc150224!':
+        return render_template('index.html')
+    else:
+        return render_template('generate.html')
 
 # Route to view saved templates
 @app.route('/view_templates')
